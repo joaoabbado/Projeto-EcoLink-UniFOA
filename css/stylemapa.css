@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+.happy-monkey-regular {
+    font-family: "Happy Monkey", system-ui;
+    font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    font-family: "Happy Monkey", system-ui;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    min-height: 100vh;
+    background-color: #fbfbfb;
+}
+.title{
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+}
+.title a{
+    font-size: 50px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+.infoBox{
+    background-color:#8ea855e3;
+    width: 20%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 5px;
+    
+}
+.infoLocationTitle{
+    font-size: 30px;
+}
+
+.infoLocation:hover{
+    border-bottom: 1px solid black;
+}
+.infoMapa{
+    background-color: azure;
+    width: 70%;
+    height: 500px;
+    border: none;
+   
+}
+.infoMapa iframe{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+
+/*************** NAV BAR ************/
+.header{
+    font-family: Happy Monkey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background:  #8ea855e3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fff; 
+    z-index: 10;
+}
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+    position: relative;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 0;
+    transition: all 0.3s;
+    border-bottom: 1px solid #8ea855e3; 
+}
+.navbar a:hover{
+    color:#383725;
+    border-color: #383725; 
+
+}
+#login{
+    background-color:#F2EEB3;
+    color: #383725;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+}
+#login:hover{
+    border-color: #8ea855;
+    background-color: #383725;
+    color: #F2EEB3;
+}
+#userPhoto {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+/*************** letras ************/
+
+.locais{
+
+    font-size: 15px;
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.pontosdecoleta{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.locais:hover{       
+    color:#383725;
+    border-bottom: 1px solid #383725; 
+    display: inline-block;
+    
+    }
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+
+
+
+
+/*************** container ************/
+
+.infoLocation{
+    padding: 2px;
+    border-bottom: 1px solid #8ea855e3;
+}
+
+/*************** estilo carrossel ************/
+.containerCarrossel {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border: 1px solid #ccc;
+    background-color: #8ea855;
+}
+
+.carousel {
+    flex: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: none;
+    padding: 20px;
+}
+
+.carousel-item.active {
+    display: flex;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-width: 400px; 
+    height: 100%;
+    max-height: 400px; 
+    object-fit: cover; 
+
+}
+
+.carousel-info {
+    margin-top: 10px;
+
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.info {
+    flex: 1;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+}
+.saibamaiscarrossel{
+    font-family: 'Happy Monkey', Arial, sans-serif;
+    background-color: #F2EEB3;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 3%;
+}
+.inputInfo{
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+/*-------------------------------------------*/
+
+.footerTitle{
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+}
+footer .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8ea855;
+    color: black;
+    text-align: center;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    cursor: pointer;
+}
+.contact img{
+    width: 30px; 
+    height: 30px;
+}
+.footerText{
+    margin-bottom: 15px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+.contact a{
+    font-weight: 400;
+}

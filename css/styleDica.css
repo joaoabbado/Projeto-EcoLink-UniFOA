@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Happy Monkey', Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #fbfbfb;
+}
+
+.header{
+    font-family: Happy Monkey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background:  #8ea855e3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fff; 
+    z-index: 10;
+}
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+    position: relative;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 0;
+    transition: all 0.3s;
+    border-bottom: 1px solid #8ea855e3; 
+}
+.navbar a:hover{
+    color:#383725;
+    border-color: #383725; 
+
+}
+#login{
+    background-color:#F2EEB3;
+    color: #383725;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+}
+#login:hover{
+    border-color: #8ea855;
+    background-color: #383725;
+    color: #F2EEB3;
+}
+#userPhoto {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.mainSection{
+    height: 100vh; 
+    background: url('background.jpg');
+    background-size: cover;
+    display: flex;
+    color: white;
+    position: relative;
+    font-size: 35px;
+    max-height: 500px;
+}
+
+.main{
+    position: relative;
+    z-index: 1; 
+    margin: 0;
+    border: 0;
+    padding: 0;
+    padding: 50px;
+    margin-top: 8%;
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.main2{
+    position: relative;
+    z-index: 1; 
+    margin: 0;
+    border: 0;
+    padding: 0;
+    padding: 50px;
+    margin-top: 7%;
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.main3{
+    position: relative;
+    z-index: 1; 
+    margin: 0;
+    border: 0;
+    padding: 0;
+    padding: 50px;
+    margin-top: 8%;
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+main {
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1Page2{
+    font-size: 40px;
+}
+
+h2 {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.divsMain h3 {
+    border-left: 5px solid #8ea855e3;
+    padding-left: 10px;
+    font-size: 25px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.divsMain p {
+    font-size: 20px;
+    padding-left: 14px;
+}
+
+.divsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25%;
+}
+
+.divsMain {
+    width: 350px;
+    margin-bottom: 8%;
+    box-sizing: border-box;
+}
+
+.divsMain img {
+    margin-right: 10px;
+    height: 40px;
+}
+
+
+
+
+
+.footerTitle{
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    font-family: Happy Monkey;
+}
+footer .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8ea855;
+    color: black;
+    text-align: center;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+.contact img{
+    width: 30px; 
+    height: 30px;
+}
+.footerText{
+    margin-bottom: 15px;
+    padding-right: 50px;
+    font-size: 20px;
+}

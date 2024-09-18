@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecolink</title>
+    <link rel="stylesheet" href="css/styleperfil.css">
+    <link rel="shortcut icon" href="imgHome/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="profile">
+        <div class="profile-header">
+            <div class="profile-picture">
+                <input type="file" id="profile-pic-upload" accept="image/*" onchange="previewProfilePic(event)">
+                <img src="imagensRSocial/Steve-Jobs.jpg" alt="Foto de Perfil" id="profile-pic">
+            </div>
+            <div class="profile-info">
+                <div id="titulo">
+                    <h1>Steve Jobs</h1>
+                    <button id="botãovoltar" onclick="window.location.href = 'indexhomelogado.html'">Voltar</button>
+                </div>
+
+                <div class="profile-section">
+                    <label for="username">Nome de Usuário:</label>
+                    <input type="text" id="username" value="Steve Jobs">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" value="omelhorcowboydetodos">
+                </div>
+                <div class="profile-section">
+                    <label for="address">Endereço:</label>
+                    <input type="text" id="address" value="Rua do Meio Dia, 1200 - Bairro Velho Oeste, Cidade da Retribuição">
+                </div>
+                <div class="profile-section">
+                    <label for="email">Email:</label>
+                    <input type="text" id="phone" value="horadeacertar@ascontas.com.br">
+                </div>
+                <div class="profile-section">
+                    <label for="phone">Telefone:</label>
+                    <input type="text" id="phone" value="(00)0000-0000">
+                </div>
+            </div>
+        </div>
+
+        <div class="followers-section">
+            <div class="profile-section">
+                <label for="followers">Seguidores:</label>
+                <span id="followers-count">4</span>
+            </div>
+            <div class="profile-section">
+                <label for="following">Seguindo:</label>
+                <span id="following-count">4</span>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <textarea id="bio" placeholder="Adicione sua biografia"></textarea>
+            <button>Salvar Alterações</button>
+        </div>
+        
+        <div class="posts">
+            <h2>Últimos Posts</h2>
+            <div class="post">
+                <h3>Aprendendo sobre coleta de lixo reciclável</h3>
+                <p>Esse é meu primeiro post nessa comunidade espero contribuir para um ambiente mais limpo e seguro.</p>
+        </div>
+    </div>
+    <script src="perfil.js"></script>  
+    </body>
+</html>

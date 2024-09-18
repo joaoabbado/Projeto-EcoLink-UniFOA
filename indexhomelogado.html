@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLink</title>
+    <link rel="stylesheet" href="css/stylehome.css">
+
+</head>
+<body onload="changeName()">
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a id="profile-name1" href="index.html">...</a></li>
+                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="#descubra">Descubra</a></li>
+                <li><a href="#saibaMais">Saiba Mais</a></li>
+                <li><a href="#">Pontos de Coleta</a></li>
+            </ul>
+            <ul class="first-sidebar">
+                <li><a class="site-title" href="#">Ecolink</a></li>
+                <li class="hideOnMobile"><a href="#destaques">Destaques</a></li>
+                <li class="hideOnMobile"><a href="#descubra">Descubra</a></li>
+                <li class="hideOnMobile"><a href="#saibaMais">Saiba Mais</a></li>
+                <li class="hideOnMobile"><a href="">Pontos de Coleta</a></li>
+                <li class="hideOnMobile"><a id="profile-name2" href="index.html">Nome</a></li>
+                <li class="hideOnDesktop" onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="welcome">
+            <div class="welcome-content">
+              <h1 id="welcome-message">...</h1>
+              <div class="buttons-welcome">
+                <a href="#" class="welcome-button">Acesso ao portal!</a>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="destaques" class="container-carousel">
+      <div class="title-carousel">
+          <h1>Destaques da semana!</h1>
+          <h2>Descubra as notícias mais relevantes, tendências imperdíveis, conteúdos exclusivos e os posts mais curtidos!</h2>
+      </div>
+      <div class="carousel">
+          <div class="carousel-images">
+              <img src="imgHome/amizadeverde1.jpg" alt="Imagem 1">
+              <img src="imgHome/amizadeverde2.jpg" alt="Imagem 2">
+              <img src="imgHome/amizadeverde3.jpg" alt="Imagem 3">
+          </div>
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+
+          <div class="title-inside-carousel" id="title-inside-carousel">
+              <h1>Titulo da postagem 1</h1>
+              <h2>Uma breve descrição sobre a postagem será mostrada aqui.</h2>
+          </div>
+      </div>
+    </section>
+
+    <section id="descubra" class="container-discover">
+      <div class="title-discover">
+          <h1>Descubra</h1>
+      </div>
+      <div class="discover-container">
+          <div class="discover-image-container">
+            <img src="imgHome/amizadeverde1.jpg" alt="Imagem exemplo">
+          </div>
+          <div class="discover-content-container">
+            <h1>Conheça mais pessoas querendo salvar o planeta como você!</h1>
+            <p>Esta é uma descrição do conteúdo. Aqui você pode adicionar detalhes sobre o que está sendo apresentado.</p>
+            <a href="indexsocial.html" class="btn">Saiba Mais</a>
+          </div>
+        </div>
+        <br>
+        <div class="discover-container">
+          <div class="discover-image-container">
+            <img src="imgHome/amizadeverde1.jpg" alt="Imagem exemplo">
+          </div>
+          <div class="discover-content-container">
+            <h1>Ajude a expandir a rede de coleta!</h1>
+            <p>Esta é uma descrição do conteúdo. Aqui você pode adicionar detalhes sobre o que está sendo apresentado.</p>
+            <a href="indexmapa.html" class="btn">Saiba Mais</a>
+          </div>
+        </div>
+        <br>
+  </section>
+
+  <section id="saibaMais" class="container-info">
+    <div class="title-info">
+        <h1>Saiba mais</h1>
+    </div>
+    <div class="card-container">    
+        <div class="card">
+            <img src="imgHome/amizadeverde1.jpg">
+            <div class="card-content">
+                <h3>TITULO DO CARD 1</h3>
+                <a href="indexDica1.html" class="btn">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imgHome/amizadeverde2.jpg">
+            <div class="card-content">
+                <h3>TITULO DO CARD 2</h3>
+                <a href="indexDica2.html" class="btn">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imgHome/amizadeverde3.jpg">
+            <div class="card-content">
+                <h3>TITULO DO CARD 3</h3>
+                <a href="indexDica3.html" class="btn">Saiba Mais</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h5>Sobre Nós</h5>
+              <p>Somos um portal focado em incentivar práticas sustentáveis através da tecnologia.</p>
+            </div>
+      
+            <div class="footer-col">
+              <h5>Links Úteis</h5>
+              <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="#descubra">Descubra</a></li>
+                <li><a href="#saibaMais">Saiba Mais</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-col">
+              <h5>Contato</h5>
+              <p>Email: email@email.com</p>
+              <p>Telefone: (00) 0000-0000</p>
+            </div>
+      
+            <div class="footer-col">
+              <h5>Siga-nos</h5>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 EcoLink. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+      
+
+    <script src="javascript/scriptHome&Login.js"></script>
+</body>
+</html>
