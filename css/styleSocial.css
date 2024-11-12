@@ -8,6 +8,7 @@
 }
 
 body{
+    background-color: #11111f;
     height: 100vh;
 }
 
@@ -16,7 +17,7 @@ a{
 }
 
 
-/*------HEADER------*/
+/*---- HEADER ----*/
 header{
     background-color: #11111f;
     width: 70px;
@@ -29,7 +30,7 @@ header{
 }
 
 
-/*------NOME E LOGO------*/
+/*---- NOME E LOGO ----*/
 .name-logo {
     display: flex;
     justify-content: center;
@@ -70,13 +71,7 @@ header{
 }
 
 
-strong{
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/*------MENU NAVEGAÇÃO------*/
+/*---- MENU NAVEGAÇÃO ----*/
 
 ul{
     height: 100%;
@@ -126,10 +121,11 @@ ul{
 }
 
 
-/* CONTEUDO PRINCIPAL */
+/*---- CONTEUDO PRINCIPAL ----*/
 
 
 .mainS {
+    background-color: ;
     width: 100%;
     max-width: 45%;
     padding: 20px;
@@ -140,7 +136,7 @@ ul{
     margin-left: 320px;
 }
 
-/* Novo Post */
+/*---- AREA DE CRIAÇÃO ----*/
 .newPost {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -160,8 +156,9 @@ ul{
 }
 
 .imgUser {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
     border-radius: 50%;
     margin-left: 90px;
 }
@@ -192,23 +189,31 @@ textarea {
     background: none;
     border: none;
     cursor: pointer;
+    transition: 0.9s;
 }
 
-.btnFileForm img {
-    width: 24px;
-    height: 24px;
+.btnSubmit:hover{
+    transform: scale(0.95);
+}
+
+.btnFileForm{
+    font-size: 30px;
+}
+
+.btnFileForm:hover{
+    transform: scale(0.95);
 }
 
 .btnSubmit {
-    background-color: #0095f6;
+    background-color: #4ff0c0;
     color: white;
-    padding: 5px 15px;
+    padding: 7px 15px;
     border-radius: 5px;
     font-weight: bold;
     font-size: 14px;
 }
 
-/* Posts */
+/*---- POSTS ----*/
 .posts {
     list-style-type: none;
     padding: 0;
@@ -277,10 +282,6 @@ textarea {
     cursor: pointer;
 }
 
-.imgActionBTN {
-    width: 24px;
-    height: 24px;
-}
 
 .legenda {
     font-size: 14px;
@@ -291,24 +292,23 @@ textarea {
 
 /* ---- ASSIDE DIREITA ----*/
 
-/* Estilo geral do aside */
 .asideRight {
     position: fixed;
     top: 0;
     right: 0;
-    width: 300px; /* Largura do menu lateral */
+    width: 300px; 
     height: 100vh;
     padding: 20px;
-    background-color: #11111f; /* Cor de fundo */
-    box-shadow: 0 0 14px #4ff0c0; /* Barrinha verde à esquerda */
+    background-color: #11111f;
+    box-shadow: 0 0 14px #4ff0c0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Mantém o footer na parte inferior */
+    justify-content: space-between;
     overflow-y: auto;
 }
 
 
-/* Título */
+/*---- TÍTULO ----*/
 .asideRight h3 {
     font-size: 18px;
     font-weight: bold;
@@ -317,7 +317,7 @@ textarea {
     text-align: center;
 }
 
-/* Estilo da lista de sugestões */
+
 .ulMain {
     list-style: none;
     padding: 0;
@@ -351,7 +351,7 @@ textarea {
 }
 
 .seguir {
-    background-color: #0095f6;
+    background-color: #4ff0c0;
     color: #ffffff;
     border: none;
     padding: 5px 10px;
@@ -361,16 +361,16 @@ textarea {
 }
 
 .seguir:hover {
-    background-color: #007acc;
+    background-color: #4ff0c0;
 }
 
-/* Estilo do footer */
+/*---- FOOTER ----*/
 .footer {
     text-align: center;
     font-size: 12px;
     color: #8e8e8e;
     padding: 20px;
-    background-color: #11111f; /* Cor de fundo semelhante ao tema escuro do Instagram */
+    background-color: #11111f;
 }
 
 .footer-links ul {
@@ -380,7 +380,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0px; /* Espaço entre os links */
+    gap: 0px;
 }
 
 .footer-links ul li {
@@ -395,10 +395,9 @@ textarea {
 
 .footer-links ul li a:hover {
     text-decoration: underline;
-    color: #ffffff; /* Opção de destaque */
+    color: #ffffff; 
 }
 
-/* Copyright */
 .footer-copyright {
     margin-top: 15px;
     color: #8e8e8e;
@@ -407,7 +406,7 @@ textarea {
 
 
 
-/* Responsividade */
+/*---- RESPONSIVIDADE ----*/
 @media (max-width: 768px) {
     
     .logo-header {
