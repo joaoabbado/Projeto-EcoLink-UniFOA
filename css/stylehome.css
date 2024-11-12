@@ -12,7 +12,7 @@ body{
 }
 /* ------------ NAVBAR ------------  */
 nav{
-    background-color: white;
+    background-color: #fff;
     box-shadow: 3px 3px 5px black;
     position: fixed;
     top: 0;
@@ -38,11 +38,11 @@ nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: #71B340;
+    color: #47d7ac;
     font-weight: bolder;
 }
 nav a:hover{
-    background-color: #71B340;
+    background-color: #47d7ac;
     color: white;
 }
 nav li:first-child{
@@ -53,7 +53,7 @@ nav li:first-child{
 }
 .site-title:hover{
     background-color: white;
-    color: #71B340;
+    color: #47d7ac;
 }
 #profile-icon:hover{
     background-color: white;
@@ -108,6 +108,9 @@ nav li:first-child{
     box-sizing: border-box;
     padding: 0 110vh 0 10vh;
 }
+
+/* background-image: url(background.jpg); */
+
 .welcome::before{
     content: '';
     position: absolute;
@@ -115,14 +118,28 @@ nav li:first-child{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(background.jpg);
+    background-image: url(../imagensRSocial/overlay.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     filter: brightness(60%); 
     z-index: -1;
+    animation: zoomEffect 10s ease-in-out infinite;
 }
+
+@keyframes zoomEffect {
+  0% {
+      background-size: 100%; /* Zoom normal */
+  }
+  50% {
+      background-size: 110%; /* Zoom in */
+  }
+  100% {
+      background-size: 100%; /* Volta ao tamanho inicial */
+  }
+}
+
 .welcome-content {
     display: flex;
     flex-direction: column;
@@ -143,14 +160,14 @@ nav li:first-child{
     font-weight: bolder;
     font-size: 1.2rem;
     padding: 10px;
-    background-color: #71B340;
+    background-color: #47d7ac;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 .welcome-button:first-child{
     background-color: white;
-    color: #71B340;
+    color: #47d7ac;
 }
 .welcome-button:hover {
     background-color: #3C5A14;
@@ -216,7 +233,7 @@ nav li:first-child{
     justify-content: center;
     margin: 100px 0px 20px 0px;
     padding: 0px 30px 0px 30px;
-    color: #71B340;
+    color: #47d7ac;
 }
 .title-carousel h1{
     font-size: xx-large;
@@ -329,7 +346,7 @@ nav li:first-child{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background-color: #71B340;
+    background-color: #11111f;
     padding: 25px 0px 50px 0px;
     scroll-margin-top: 58px;
 }
@@ -337,7 +354,7 @@ nav li:first-child{
     margin-top: 25px;
     font-size: x-large;
     font-weight: normal;
-    color: white;
+    color: #11111f;
 }
 .card-container{
     display: flex;
@@ -369,7 +386,7 @@ nav li:first-child{
 .card-content .btn{
     display: inline-block;
     padding: 8px 16px;
-    background-color: #71B340;
+    background-color: #47d7ac;
     text-decoration: none;
     border-radius: 4px;
     margin-top: 16px;
@@ -453,7 +470,7 @@ nav li:first-child{
     font-weight: bolder;
     font-size: 1.2rem;
     padding: 10px;
-    background-color: #71B340;
+    background-color: #47d7ac;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -467,7 +484,7 @@ nav li:first-child{
     margin: 50px 0px 50px 0px;
     font-size: x-large;
     font-weight: normal;
-    color: #71B340;
+    color: #47d7ac;
     text-shadow: 
         -1px -1px 0px #3C5A14,  
         1px -1px 0px #3C5A14,  
@@ -516,14 +533,14 @@ nav li:first-child{
   }
 /*--------------- Footer --------------*/
 footer {
-  background-color: #f8f9fa;
+  background-color: #47d7ac;
   border-top: 1px solid #e4e4e4;
   padding: 20px 0;
 }
 
 .footer-container {
   max-width: 1200px;
-  margin: 20px 0 0;
+  margin-left: 180px;
   padding: 0 15px;
 }
 
@@ -541,15 +558,14 @@ footer {
 }
 
 h5 {
-  color: #71B340;
+  color: #11111f;
   margin-bottom: 10px;
   font-size: 16px;
 }
 
 p, ul {
-  margin: 0;
   padding: 0;
-  color: #333;
+  color: #11111f;
 }
 
 ul {
@@ -562,7 +578,7 @@ ul li {
 
 ul li a {
   text-decoration: none;
-  color: #71B340;
+  color: #11111f;
 }
 
 ul li a:hover {
@@ -572,11 +588,11 @@ ul li a:hover {
 .footer-bottom {
   text-align: center;
   padding: 10px 0;
-  background-color: #71B340;
+  background-color: #11111f;
 }
 
 .footer-bottom p {
-  color: white;
+  color: #47d7ac;
   font-size: 14px;
 }
 
