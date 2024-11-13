@@ -106,17 +106,20 @@ ul{
 }
 
 
-.logo-anim-lat {
-    position: absolute;
-    bottom: 10px;
-    right: 5px;
-    width: 60px; 
-    height: 105px;
+#logo-anim-lat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; 
+    height: 180px;
 }
 
-.logo-anim-lat img {
-    width: 100%;
-    height: 100%;
+#logo-anim-lat img {
+    width: 300px; 
+    height: 300px;
+    width: ;
+    margin-left: 160px;
+    margin-bottom: 200px;
     object-fit: cover;
 }
 

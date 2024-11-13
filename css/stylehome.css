@@ -485,12 +485,7 @@ nav li:first-child{
     font-size: x-large;
     font-weight: normal;
     color: #47d7ac;
-    text-shadow: 
-        -1px -1px 0px #3C5A14,  
-        1px -1px 0px #3C5A14,  
-        -1px 1px 0px #3C5A14,  
-        1px 1px 0px #3C5A14;
-  }
+   }
   @media (max-width: 800px) {
     .discover-container {
         flex-direction: column;
