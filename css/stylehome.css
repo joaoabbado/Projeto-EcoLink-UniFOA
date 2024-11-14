@@ -13,7 +13,7 @@ body{
 /* ------------ NAVBAR ------------  */
 nav{
     background-color: #fff;
-    box-shadow: 3px 3px 5px black;
+    box-shadow: 3px 3px 5px #11111f;
     position: fixed;
     top: 0;
     width: 100%;
@@ -40,10 +40,11 @@ nav a{
     align-items: center;
     color: #47d7ac;
     font-weight: bolder;
+    transition: 0.8s;
 }
 nav a:hover{
     background-color: #47d7ac;
-    color: white;
+    color: #11111f;
 }
 nav li:first-child{
     margin-right: auto;
