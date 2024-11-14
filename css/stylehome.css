@@ -336,7 +336,7 @@ nav li:first-child{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background-color: #11111f;
+    background-color: #b2b2b2;
     padding: 25px 0px 50px 0px;
     scroll-margin-top: 58px;
 }
@@ -623,7 +623,7 @@ ul li a:hover {
   transition: transform 0.5s ease;
 }
 .btn:hover{
-  background-color: #3C5A14;
+  background-color: #3bb490;
   color: white;
   transform: translateY(-3px);
 }
