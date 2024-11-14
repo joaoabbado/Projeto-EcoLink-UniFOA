@@ -129,18 +129,6 @@ nav li:first-child{
     animation: zoomEffect 10s ease-in-out infinite;
 }
 
-@keyframes zoomEffect {
-  0% {
-      background-size: 100%; /* Zoom normal */
-  }
-  50% {
-      background-size: 110%; /* Zoom in */
-  }
-  100% {
-      background-size: 100%; /* Volta ao tamanho inicial */
-  }
-}
-
 .welcome-content {
     display: flex;
     flex-direction: column;
@@ -171,7 +159,7 @@ nav li:first-child{
     color: #47d7ac;
 }
 .welcome-button:hover {
-    background-color: #3C5A14;
+    background-color: #3bb490;
     color: white;
 }
 

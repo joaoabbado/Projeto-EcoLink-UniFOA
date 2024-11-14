@@ -24,7 +24,7 @@ header{
     height: 100%;
     position: fixed;
     padding: 40px 0 40px 1%;
-    box-shadow: 4px 0 0#4ff0c0;
+    box-shadow: 4px 0 0#47d7ac;
     overflow: hidden;
     transition: 0.7s;
 }
@@ -200,7 +200,7 @@ textarea {
 }
 
 .btnSubmit {
-    background-color: #4ff0c0;
+    background-color: #47d7ac;
     color: white;
     padding: 7px 15px;
     border-radius: 5px;
@@ -296,7 +296,7 @@ textarea {
     height: 100vh;
     padding: 20px;
     background-color: #11111f;
-    box-shadow: 0 0 14px #4ff0c0;
+    box-shadow: 0 0 14px #47d7ac;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -347,7 +347,7 @@ textarea {
 }
 
 .seguir {
-    background-color: #4ff0c0;
+    background-color: #47d7ac;
     color: #11111f;
     border: none;
     padding: 2px 8px;
@@ -357,7 +357,7 @@ textarea {
 }
 
 .seguir:hover {
-    background-color: #4ff0c0;
+    background-color: #47d7ac;
 }
 
 
