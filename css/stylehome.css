@@ -126,8 +126,9 @@ nav li:first-child{
     background-attachment: fixed;
     filter: brightness(60%); 
     z-index: -1;
-    animation: zoomEffect 10s ease-in-out infinite;
 }
+
+
 
 .welcome-content {
     display: flex;
