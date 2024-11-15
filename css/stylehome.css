@@ -9,6 +9,10 @@ body{
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed;  
 }
 /* ------------ NAVBAR ------------  */
 nav{
@@ -470,7 +474,7 @@ nav li:first-child{
   @media (max-width: 800px) {
     .discover-container {
         flex-direction: column;
-        margin: 0px 0px 0px 0px;
+        margin: 0px 10px 0px 10px;
       }
       .title-discover{
         font-size: larger; 
