@@ -124,7 +124,6 @@ nav li:first-child{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    filter: brightness(60%); 
     z-index: -1;
 }
 
@@ -223,7 +222,7 @@ nav li:first-child{
     justify-content: center;
     margin: 100px 0px 20px 0px;
     padding: 0px 30px 0px 30px;
-    color: #47d7ac;
+    color: #11111f;
 }
 .title-carousel h1{
     font-size: xx-large;
@@ -465,17 +464,7 @@ nav li:first-child{
     text-decoration: none;
     border-radius: 5px;
   }
-  .title-discover{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 50px 0px 50px 0px;
-    font-size: x-large;
-    font-weight: normal;
-    color: #47d7ac;
-   }
+  
   @media (max-width: 800px) {
     .discover-container {
         flex-direction: column;
@@ -524,8 +513,7 @@ footer {
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin-left: 180px;
+  margin-top: 10px;
   padding: 0 15px;
 }
 
