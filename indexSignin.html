@@ -6,6 +6,8 @@
     <title>Ecolink - Login e Cadastro</title>
     <link rel="stylesheet" href="/css/styleLogin.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="/javascript/scriptLogin.js"></script>
+
 </head>
 <body>
     <section>
@@ -15,7 +17,7 @@
             <label for="email">Email</label>
             <div class="input-box">
                 <i class="bi bi-envelope-fill"></i>
-                <input type="email" id="email" name="email" placeholder="Seu email aqui">
+                <input type="text" id="email" placeholder="Seu email aqui">
             </div>
             <label for="senha">Senha</label>
             <div id="divSenha" class="forca-senha">
@@ -24,22 +26,10 @@
                 <span id="togglePassword" class="toggle-password" onclick="botaoSenhaVisibility()">Mostrar</span>
             </div>
 
-            <div class="termos">
-                <input type="checkbox">
-                <p>Eu concordo com os <a href="/politicaPrivacidade.html" target="_blank">termos de uso e privacidade</a></p>
-            </div>
-
-
-
-            <div class="cadastro-esqueci-senha">
-                <a class="senha" href="#">Esqueci minha senha</a>
-                <a class="cadastrar" href="indexSignin.html">Cadastre-se</a>
-            </div>
+            <button class="entrar" type="submit">Entrar</button>
 
         </form>
-        <div id="error"></div>
-        <button onclick="entrar()">Entrar</button>
     </section>
-    <script src="/javascript/scriptLogin.js"></script>
+    
 </body>
 </html>
