@@ -1,50 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 
-.happy-monkey-regular {
-    font-family: "Happy Monkey", system-ui;
-    font-style: normal;
-}
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px;
-    font-family: "Happy Monkey", system-ui;
-}
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     min-height: 100vh;
-    background-color: #fbfbfb;
+    background-color: #ddd;
 }
-.title{
-    margin-top: 50px;
-    justify-content: center;
-    text-align: center;
-}
-.title a{
-    font-size: 50px;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
 
-
-.container{
+.container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 100px;
+    flex-wrap: wrap; /* Permite reorganização em telas menores */
+    
 }
-.infoBox{
-    background-color:#8ea855e3;
+
+.pontosdecoleta{
+     font-size: larger;
+    color: #47d7ac;
+    font-size: 35px;
+}
+
+.locais {
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s;
+    
+
+}
+.locais:hover{
+    
+    color: #47d7ac;
+}
+
+.infoBox {
+    background-color: white;
     width: 20%;
     height: 500px;
     display: flex;
@@ -55,139 +53,88 @@ body{
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
+    border: 1px solid #47d7ac;
     padding: 20px;
     padding-top: 5px;
-    
-}
-.infoLocationTitle{
-    font-size: 30px;
 }
 
-.infoLocation:hover{
-    border-bottom: 1px solid black;
-}
-.infoMapa{
-    background-color: azure;
+.infoMapa {
+    
     width: 70%;
-    height: 500px;
+    height: auto;
     border: none;
-   
 }
-.infoMapa iframe{
+
+.infoMapa iframe {
     width: 100%;
     height: 500px;
     border-radius: 10px;
+    border-color: #47d7ac;
+    margin-bottom: 10px;
 }
 
-
+.info {
+    padding: 20px;
+    border-left: 1px solid #47d7ac;
+}
 
 /*************** NAV BAR ************/
-.header{
-    font-family: Happy Monkey;
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background:  #8ea855e3;
+    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #fff; 
+    border-bottom: 2px solid #47d7ac; 
     z-index: 10;
 }
-.logo{
+
+.logo {
     font-size: 32px;
-    color: #fff;
+    color: #47d7ac;
     text-decoration: none;
     font-weight: 700;
 }
-.navbar a{
-    position: relative;
+
+.navbar a {
     font-size: 15px;
     font-weight: bolder;
-    color: #fff;
+    color: #47d7ac;
     text-decoration: none;
     margin-left: 40px;
-    margin-right: 0;
     transition: all 0.3s;
-    border-bottom: 1px solid #8ea855e3; 
 }
-.navbar a:hover{
-    color:#383725;
-    border-color: #383725; 
 
+.navbar a:hover {
+    color:#47d7ac;
 }
-#login{
-    background-color:#F2EEB3;
+
+#login {
     color: #383725;
-    padding: 15px 20px 15px 20px;
-    border-radius: 10px;
+    padding: 15px 20px;
 }
-#login:hover{
-    border-color: #8ea855;
+
+#login:hover {
     background-color: #383725;
     color: #F2EEB3;
-}
-#userPhoto {
-    margin-left: 20px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    object-fit: cover;
-    cursor: pointer;
-}
-/*************** letras ************/
-
-.locais{
-
-    font-size: 15px;
-    font-weight: bolder;
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.pontosdecoleta{
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.locais:hover{       
-    color:#383725;
-    border-bottom: 1px solid #383725; 
-    display: inline-block;
-    
-    }
-
-a{
-    text-decoration: none;
-    color: inherit;
-    font-weight: bold;
-    font-size: 18px;
-
-}
-
-
-
-
-
-/*************** container ************/
-
-.infoLocation{
-    padding: 2px;
-    border-bottom: 1px solid #8ea855e3;
 }
 
 /*************** estilo carrossel ************/
 .containerCarrossel {
     display: flex;
+    flex-wrap: wrap;
     width: 80%;
     margin: auto;
     margin-top: 5%;
     margin-bottom: 10%;
-    border: 1px solid #ccc;
-    background-color: #8ea855;
+    border: 1px solid #47d7ac;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden; /* Evita estouro em telas menores */
 }
 
 .carousel {
@@ -200,7 +147,6 @@ a{
     display: none;
     flex-direction: column;
     align-items: center;
-    text-align: none;
     padding: 20px;
 }
 
@@ -211,93 +157,166 @@ a{
 .carousel-item img {
     width: 100%;
     max-width: 400px; 
-    height: 100%;
-    max-height: 400px; 
-    object-fit: cover; 
-
+    height: auto;
+    object-fit: cover;
 }
 
 .carousel-info {
     margin-top: 10px;
-
+    text-align: left;
 }
 
 .prev, .next {
     position: absolute;
-    top: 50%;
+    top: 50%; /* Centraliza verticalmente */
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background-color: #47d7ac; /* Fundo semitransparente */
+    color: #fff; /* Cor do texto */
     border: none;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
+    border-radius: 50%; /* Botão redondo */
+    z-index: 5; /* Garantir que esteja acima das imagens */
 }
 
 .prev {
-    left: 0;
+    left: 10px; /* Posicionado à esquerda */
 }
 
 .next {
-    right: 0;
+    right: 10px; /* Posicionado à direita */
 }
 
-.info {
-    flex: 1;
-    padding: 20px;
-    border-left: 1px solid #ccc;
+.prev:hover, .next:hover {
+    background-color: rgba(71, 215, 172, 0.8); /* Fundo ao passar o mouse */
 }
-.saibamaiscarrossel{
-    font-family: 'Happy Monkey', Arial, sans-serif;
-    background-color: #F2EEB3;
+
+/*************** Botões Gerais ************/
+.saibamaiscarrossel {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
     color: black;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    background-color: #ddd;
+    border: 1px solid #47d7ac;
     cursor: pointer;
-    border-radius: 4px;
-    margin-top: 3%;
-}
-.inputInfo{
-    width: 100%;
-    padding: 8px;
     font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
+    transition: all 0.3s ease;
+    margin-top: 1px;
+}
+
+.saibamaiscarrossel:hover {
+    background-color: #47d7ac;
+    color: white;
+    border-color: #47d7ac;
+}
+
+/*************** Formulário ************/
+.inputInfo {
+    border-radius: 10rem; 
+    background-color: #ddd;
+    border: 1px solid #47d7ac;
+    font-size: 18px;
+    padding: .75rem 1.25rem;
+    height: 35px;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
+    transition: all 0.3s ease;
 }
-/*-------------------------------------------*/
 
-.footerTitle{
-    text-align: center;
-    font-size: 25px;
-    width: 100%;
+.inputInfo:focus {
+    outline: none;
+    border-color: #47d7ac;
+    background-color: white;
 }
-footer .contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #8ea855;
+
+/*************** Footer ************/
+footer {
+    background-color: #47d7ac;
     color: black;
     text-align: center;
-    left: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 100;
-    cursor: pointer;
-}
-.contact img{
-    width: 30px; 
-    height: 30px;
-}
-.footerText{
-    margin-bottom: 15px;
-    padding-right: 50px;
-    font-size: 20px;
+    padding: 30px 0;
 }
 
-.contact a{
-    font-weight: 400;
+/*************** Media Queries ************/
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infoBox, .infoMapa {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .infoMapa iframe {
+        height: 300px;
+    }
+
+    .containerCarrossel {
+        width: 100%;
+    }
+
+    .carousel-item img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .infoBox {
+        font-size: 16px;
+        height: auto;
+    }
+
+    .containerCarrossel {
+        flex-direction: column;
+    }
+
+    .infoMapa iframe {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+
+    .infoBox {
+        font-size: 14px;
+    }
+
+    .infoMapa {
+        height: auto;
+    }
+
+    .carousel-item img {
+        max-height: 200px;
+    }
+
+    .prev, .next {
+        padding: 5px;
+    }
 }
