@@ -1,67 +1,16 @@
+import { pegarData } from "./scriptBD.js"
 
-const usuarios = [
-    {
-        id: 1,
-        nome: 'Paulo',
-        email: 'paulo@gmail.com',
-        tipo: 'aluno',
-        senha: 'senhaP'
-    },
-    {
-        id: 2,
-        nome: 'Guilherme',
-        email: 'guilherme@gmail.com',
-        tipo: 'adm',
-        senha: 'senhaG'
-    },
-    {
-        id: 3,
-        nome: 'Arthur',
-        email: 'arthur@gmail.com',
-        tipo: 'aluno',
-        senha: 'senhaA'
-    },
-    {
-        id: 4,
-        nome: 'Gorito',
-        email: 'gorito@gmail.com',
-        tipo: 'aluno',
-        senha: 'senhaG'
-    },
-    {
-        id: 5,
-        nome: 'João',
-        email: 'joão@gmail.com',
-        tipo: 'aluno',
-        senha: 'senhaJ'
-    },
-    {
-        id: 5,
-        nome: 'Glyden',
-        email: 'glyden@gmail.com',
-        tipo: 'aluno',
-        senha: 'senhaG'
-    },
-    {
-        id: 5,
-        nome: 'Pilad',
-        email: 'pilad@gmail.com',
-        tipo: 'aluno',
-        senha: 'senhaP'
-    }
-]
+    function getUsuario(email,senha){
+        const usuarios = pegarData()
 
-// localStorage.setItem("BDusuarios",JSON.stringify(usuarios))
-// const visualizarJSON = localStorage.getItem("BDusuarios")
-// console.log(visualizarJSON);
-
-function getUsuario(email,senha){
-    const u = usuarios.filter(
-        function(usu){
-            return usu.email == email && usu.senha === senha
-        }
-    )
-    return u
+        console.log(usuarios)
+        
+        const u = usuarios.filter(
+            function(usu){
+                return usu.email == email && usu.senha === senha
+            }
+        )
+        return u
     }
     
     function entrar(){
@@ -76,6 +25,11 @@ function getUsuario(email,senha){
         }
     }
     
+    document.addEventListener("DOMContentLoaded", () => {
+        const loginButton = document.querySelector("#loginBotao");
+        loginButton.addEventListener("click", entrar);
+    });
+
     // function changeName() {
     //     const username = localStorage.getItem('username');
         
