@@ -50,11 +50,22 @@ const usuarios = [
     }
 ]
 
-localStorage.setItem("BDusuarios",JSON.stringify(usuarios))
-const visualizarJSON = localStorage.getItem("BDusuarios")
-console.log(visualizarJSON);
+if (!localStorage.getItem("BDusuarios")) {
+    localStorage.setItem("BDusuarios", JSON.stringify(usuarios));
+}
 
 export function pegarData(){
     const dados = JSON.parse(localStorage.getItem("BDusuarios")) || []
     return dados
+}
+
+export function adicionarUsuario(novoUsuario) {
+    const dados = pegarData();
+    // Gera um novo ID automaticamente (incremental)
+    const novoId = dados.length > 0 ? dados[dados.length - 1].id + 1 : 1;
+    const usuarioComId = { id: novoId, ...novoUsuario };
+
+    // Adiciona o novo usuário
+    dados.push(usuarioComId);
+    localStorage.setItem("BDusuarios", JSON.stringify(dados));
 }
