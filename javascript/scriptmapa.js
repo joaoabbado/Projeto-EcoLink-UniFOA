@@ -18,3 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize the first item as active
     items[currentIndex].classList.add('active');
 });
+
+
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}

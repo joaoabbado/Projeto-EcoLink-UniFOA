@@ -79,48 +79,94 @@ body {
 }
 
 /*************** NAV BAR ************/
-.header {
+nav{
+    background-color: #fff;
+    box-shadow: 3px 3px 5px #11111f;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    padding: 20px 100px;
-    background: white;
+    overflow: hidden;
+    z-index: 1000;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    border-bottom: 2px solid #47d7ac; 
-    z-index: 10;
-}
 
-.logo {
-    font-size: 32px;
-    color: #47d7ac;
+}
+nav li{
+    height: 50px;
+
+}
+nav a{
+    height: 100%;
+    padding: 5px 30px;
     text-decoration: none;
-    font-weight: 700;
-}
-
-.navbar a {
-    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: #47d7ac;
     font-weight: bolder;
+    transition: 0.8s;
+}
+nav a:hover{
+    background-color: #47d7ac;
+    color: #11111f;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.site-title{
+    font-size: 20px;
+}
+.site-title:hover{
+    background-color: white;
     color: #47d7ac;
-    text-decoration: none;
-    margin-left: 40px;
-    transition: all 0.3s;
+}
+#profile-icon:hover{
+    background-color: white;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
 }
 
-.navbar a:hover {
-    color:#47d7ac;
+@media(max-width: 900px){
+    .hideOnMobile{
+        display: none;
+    }
 }
-
-#login {
-    color: #383725;
-    padding: 15px 20px;
+@media(min-width: 900px){
+    .hideOnDesktop{
+        display: none;
+    }
 }
-
-#login:hover {
-    background-color: #383725;
-    color: #F2EEB3;
+@media(max-width:1000px){
+    .first-sidebar{
+      font-size: 14px;
+    }
+    .site-title{
+      font-size: 20px;
+    }
 }
 
 /*************** estilo carrossel ************/
