@@ -30,8 +30,8 @@ section {
     justify-content: space-evenly;
     background-color: white;
     box-shadow: 0px 0px 10px 0px #3030302f;
-    height: 430px;
-    width: 360px;
+    height: 520px;
+    width: 380px;
     padding: 20px 0px 0px 25px;
     border-radius: 10px;
     align-items: start;
@@ -51,7 +51,6 @@ form {
     gap: 5px;
     align-items: start;
     justify-content: center;
-    margin-left: 10px;
 }
 
 .input-box {
@@ -62,14 +61,33 @@ form {
     flex-direction: row;
     align-items: center;
     justify-content: end;
-    width: 310px;
+    width: 350px;
     height: 33px;
     border-radius: 5px;
     gap: 5px;
 
 }
-
-#email {
+.botões{
+    justify-content: center;
+}
+button{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #47d7ac;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 16px;
+    transition: transform 0.5s ease;
+}
+button:hover{
+    background-color: #3bb490;
+    color: white;
+    transform: translateY(-2px);
+}
+input {
     width: 90%;
     height: 100%;
     border: none;
@@ -77,7 +95,6 @@ form {
     background-color: transparent;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
-    outline: none;
 }
 
 select {
@@ -115,7 +132,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: end;
-    width: 310px;
+    width: 350px;
     height: 33px;
     border-radius: 5px;
     gap: 5px;
@@ -229,6 +246,16 @@ transition: .2s;
     cursor: pointer;
     transition: .2s;
 }
+ul {
+    list-style-type: none;
+    padding: 0; 
 
-
-
+  }
+  
+  li a{
+    color: black;
+    text-decoration: none;
+  }
+  li a:focus {
+    outline: none; /* Remove o contorno ao focar no link */
+  } 

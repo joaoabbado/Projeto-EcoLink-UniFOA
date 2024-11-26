@@ -9,7 +9,7 @@
 </head>
 <body>
     <section>
-        <h1>Junte-se a nossa comunidade</h1>
+        <h1>Junte-se a nossa comunidade!</h1>
         <form id="cadastroForm">
             <label for="email">Email</label>
             <div class="input-box">
@@ -20,25 +20,21 @@
             <div id="divSenha" class="forca-senha">
                 <i class="bi bi-lock-fill"></i>
                 <input type="password" id="senha" placeholder="Sua senha aqui" name="senha">
-                <span id="togglePassword" class="toggle-password" onclick="botaoSenhaVisibility()">Mostrar</span>
             </div>
-
-            <div class="termos">
-                <input type="checkbox">
-                <p>Eu concordo com os <a href="/politicaPrivacidade.html" target="_blank">termos de uso e privacidade</a></p>
-            </div>
-
-
-
-            <div class="cadastro-esqueci-senha">
-                <a class="senha" href="#">Esqueci minha senha</a>
-                <a class="cadastrar" href="indexSignin.html">Cadastre-se</a>
-            </div>
-
+            <div id="error"></div>
         </form>
-        <div id="error"></div>
-        <button id="loginBotao">Entrar</button>
+        <div id="botões">
+            <button type="button" id="loginBotao">Entrar</button>
+            <button type="button" id="signinBotao">Cadastrar</button>
+        </div>
+
+
     </section>
+    <script>
+        document.getElementById("signinBotao").addEventListener("click", function() {
+          window.location.href = "indexSignin.html";
+        });
+      </script>
     <script type="module" src="/javascript/scriptLogin.js"></script>
 </body>
 </html>
