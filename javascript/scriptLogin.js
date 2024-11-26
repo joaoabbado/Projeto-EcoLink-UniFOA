@@ -16,11 +16,12 @@ import { pegarData } from "./scriptBD.js"
     function entrar(){
         const email = document.querySelector("#email").value
         const senha = document.querySelector("#senha").value
-    
         const usuario = getUsuario(email,senha)
+        
         if(usuario.length == 0){
             document.querySelector("#error").textContent = "Usuário ou senha incorretos!"
         }else{
+                localStorage.setItem("usuarioLogado", usuario[0].nome);
                 window.location.href = "indexhomelogado.html";
         }
     }
@@ -30,18 +31,3 @@ import { pegarData } from "./scriptBD.js"
         loginButton.addEventListener("click", entrar);
     });
 
-    // function changeName() {
-    //     const username = localStorage.getItem('username');
-        
-    //     if (username) {
-    //       document.getElementById('profile-name1').textContent = username;
-    //       document.getElementById('profile-name2').textContent = username;
-    //       document.getElementById('welcome-message').textContent = "Bem-vindo " + username + ", ao seu portal dedicado a sustentabilidade!"
-    //     } else {
-    //       console.log("Usuário não encontrado no localStorage");
-    //     }
-    //   }
-    
-    // function changeWelcome(){
-    
-    // }
