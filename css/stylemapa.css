@@ -48,12 +48,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
+    text-align: start;
+    align-items: flex-start;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 400;
     border-radius: 10px;
-    border: 1px solid #47d7ac;
     padding: 20px;
     padding-top: 5px;
 }
@@ -75,7 +74,6 @@ body {
 
 .info {
     padding: 20px;
-    border-left: 1px solid #47d7ac;
 }
 
 /*************** NAV BAR ************/
@@ -141,13 +139,11 @@ nav li:first-child{
     width: 250px;
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.74);
-    backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px #11111f;
     display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-
 }
 
 .hideOnDesktop{
@@ -189,9 +185,9 @@ nav li:first-child{
     margin-top: 5%;
     margin-bottom: 10%;
     border: 1px solid #47d7ac;
-    background-color: white;
+    background-color: #fff;
     border-radius: 10px;
-    overflow: hidden; /* Evita estouro em telas menores */
+    overflow: hidden;
 }
 
 .carousel {
@@ -225,55 +221,53 @@ nav li:first-child{
 
 .prev, .next {
     position: absolute;
-    top: 50%; /* Centraliza verticalmente */
+    top: 50%;
+    height: 50px;
     transform: translateY(-50%);
-    background-color: #47d7ac; /* Fundo semitransparente */
-    color: #fff; /* Cor do texto */
+    background-color: #fff;
+    color: #11111f; 
     border: none;
     padding: 5px;
     cursor: pointer;
-    border-radius: 50%; /* Botão redondo */
-    z-index: 5; /* Garantir que esteja acima das imagens */
+    border-radius: 50%; 
+    z-index: 5; 
+    font-size: 30px;
 }
 
 .prev {
-    left: 10px; /* Posicionado à esquerda */
+    left: 10px;
 }
 
 .next {
-    right: 10px; /* Posicionado à direita */
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(71, 215, 172, 0.8); /* Fundo ao passar o mouse */
+    right: 10px;
 }
 
 /*************** Botões Gerais ************/
-.saibamaiscarrossel {
-    display: inline-block;
+.btnInfo {
+    background-color: #47d7ac;
+    display: flex;
     padding: .75rem 1.25rem;
-    border-radius: 10rem;
-    color: black;
-    background-color: #ddd;
-    border: 1px solid #47d7ac;
+    border-radius: 2%;
+    color: #fff;
+    border: none;
     cursor: pointer;
     font-size: 16px;
-    transition: all 0.3s ease;
-    margin-top: 1px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 10px;
 }
 
-.saibamaiscarrossel:hover {
-    background-color: #47d7ac;
-    color: white;
-    border-color: #47d7ac;
+.btnInfo:hover {
+    background-color: #3bb490;
 }
 
 /*************** Formulário ************/
 .inputInfo {
-    border-radius: 10rem; 
+    border-radius: 2%; 
     background-color: #ddd;
-    border: 1px solid #47d7ac;
+    border: none;
     font-size: 18px;
+    font-weight: 400;
     padding: .75rem 1.25rem;
     height: 35px;
     width: 300px;
@@ -284,8 +278,11 @@ nav li:first-child{
 
 .inputInfo:focus {
     outline: none;
-    border-color: #47d7ac;
     background-color: white;
+}
+
+.info h3,h2{
+    font-weight: 500;
 }
 
 /*************** Footer ************/
@@ -392,6 +389,10 @@ footer {
 @media (max-width: 768px) {
     .header {
         padding: 20px;
+    }
+
+    .locais{
+         
     }
 
     .logo {
