@@ -87,6 +87,7 @@ nav{
     width: 100%;
     overflow: hidden;
     z-index: 1000;
+    padding-bottom: 5px;
 }
 nav ul{
     width: 100%;
@@ -100,29 +101,34 @@ nav li{
     height: 50px;
 
 }
+
+.hideOnMobile a i{
+  font-size: 32px;
+  color: #11111f;
+}
+
 nav a{
     height: 100%;
     padding: 5px 30px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: #47d7ac;
+    color: #11111f;
     font-weight: bolder;
-    transition: 0.8s;
+    transition: 0.3s;
 }
 nav a:hover{
-    background-color: #47d7ac;
-    color: #11111f;
+    transform: scale(1.01);
 }
 nav li:first-child{
     margin-right: auto;
 }
 .site-title{
     font-size: 20px;
+    transition: 0.3s;
 }
 .site-title:hover{
-    background-color: white;
-    color: #47d7ac;
+    transform: scale(1.01);
 }
 #profile-icon:hover{
     background-color: white;
@@ -134,15 +140,20 @@ nav li:first-child{
     height: 100vh;
     width: 250px;
     z-index: 999;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255, 255, 255, 0.74);
     backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px black;
+    box-shadow: -10px 0 10px #11111f;
     display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 
 }
+
+.hideOnDesktop{
+  cursor: pointer;
+}
+
 .sidebar li{
     width: 100%;
 }

@@ -13,93 +13,104 @@ body {
 }
 
 nav{
-    background-color: #fff;
-    box-shadow: 3px 3px 5px #11111f;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    z-index: 1000;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px #11111f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1000;
+  padding-bottom: 5px;
 }
 nav ul{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
 }
 nav li{
-    height: 50px;
+  height: 50px;
 
 }
+
+.hideOnMobile a i{
+font-size: 32px;
+color: #11111f;
+}
+
 nav a{
-    height: 100%;
-    padding: 5px 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: #47d7ac;
-    font-weight: bolder;
-    transition: 0.8s;
+  height: 100%;
+  padding: 5px 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #11111f;
+  font-weight: bolder;
+  transition: 0.3s;
 }
 nav a:hover{
-    background-color: #47d7ac;
-    color: #11111f;
+  transform: scale(1.01);
 }
 nav li:first-child{
-    margin-right: auto;
+  margin-right: auto;
 }
 .site-title{
-    font-size: 20px;
+  font-size: 20px;
+  transition: 0.3s;
 }
 .site-title:hover{
-    background-color: white;
-    color: #47d7ac;
+  transform: scale(1.01);
 }
 #profile-icon:hover{
-    background-color: white;
+  background-color: white;
 }
 .sidebar{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    z-index: 999;
-    background-color: rgba(255,255,255,0.7);
-    backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px black;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.74);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px #11111f;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 
 }
+
+.hideOnDesktop{
+cursor: pointer;
+}
+
 .sidebar li{
-    width: 100%;
+  width: 100%;
 }
 .sidebar a{
-    width: 100%;
+  width: 100%;
 }
 
 @media(max-width: 900px){
-    .hideOnMobile{
-        display: none;
-    }
+  .hideOnMobile{
+      display: none;
+  }
 }
 @media(min-width: 900px){
-    .hideOnDesktop{
-        display: none;
-    }
+  .hideOnDesktop{
+      display: none;
+  }
 }
 @media(max-width:1000px){
-    .first-sidebar{
-      font-size: 14px;
-    }
-    .site-title{
-      font-size: 20px;
-    }
+  .first-sidebar{
+    font-size: 14px;
+  }
+  .site-title{
+    font-size: 20px;
+  }
 }
 
 .mainSection {
