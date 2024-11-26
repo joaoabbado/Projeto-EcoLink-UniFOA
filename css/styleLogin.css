@@ -230,5 +230,20 @@ transition: .2s;
     transition: .2s;
 }
 
+button{
+    font-size: 16px;
+    padding: 5px 20px;
+    background-color: #47d7ac;
+    border: none;
+    border-radius: 5%;
+    color: #11111f;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.01);
+}
+
 
 
