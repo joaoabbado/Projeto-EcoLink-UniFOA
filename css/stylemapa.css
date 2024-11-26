@@ -291,10 +291,78 @@ nav li:first-child{
 /*************** Footer ************/
 footer {
     background-color: #47d7ac;
-    color: black;
+    color: #11111f;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 30%;
+    margin: 10px 20px;
+  }
+  
+  .footer-section h2,
+  .footer-section h3 {
+    color: #11111f; 
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #11111f; 
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 8px 0;
+  }
+  
+  .footer-section ul li a {
+    color: #11111f; 
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #11111f;
+  }
+  
+  /* Social Links */
+  .social-links a {
+    margin-right: 20px;
+    display: inline-block;
+  }
+  
+  .footer-section .social-links a i{
+    color: #11111f;
+    font-size: 24Px;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
     text-align: center;
-    padding: 30px 0;
-}
+    border-top: 1px solid #11111f; 
+    margin-top: 20px;
+    font-size: 14px;
+    color: #11111f; 
+  }
+  
+  .footer-bottom p{
+    margin-top: 1%;
+  }
 
 /*************** Media Queries ************/
 @media (max-width: 1024px) {
