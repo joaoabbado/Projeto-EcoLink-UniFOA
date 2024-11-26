@@ -187,11 +187,12 @@ textarea {
     background: none;
     border: none;
     cursor: pointer;
-    transition: 0.9s;
+    transition: 0.3s;
 }
 
 .btnSubmit:hover{
-    transform: scale(0.95);
+    transform: scale(1.01);
+    background-color: #3bb490;
 }
 
 .btnFileForm{
@@ -199,7 +200,7 @@ textarea {
 }
 
 .btnFileForm:hover{
-    transform: scale(0.95);
+    transform: scale(1.01);
 }
 
 .btnSubmit {
@@ -242,10 +243,8 @@ textarea {
     width: 100%;
 }
 
-.imgPostUsuario {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+.nameAndHour i {
+    font-size: 36px;
     margin-right: 10px;
 }
 
