@@ -18,14 +18,12 @@
             <ul class="sidebar">
                 <li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="indexhomelogado.html">Página inicial</a></li>
-                <li><a href="indexsocial.html">Comunidade</a></li>
                 <li><a href="index.html">Sair</a></li>
             </ul>
             <ul class="first-sidebar">
                 <li><a class="site-title" href="indexhomelogado.html">Ecolink</a></li>
                 <li class="hideOnMobile"><a href="indexhomelogado.html">Página inicial</a></li>
-                <li class="hideOnMobile"><a href="indexLogin.html">Comunidade</a></li>
-                <li class="hideOnMobile"><a href="indexLogin.html" id="profile-icon"><i class="bi bi-person-circle"></i></a></li>
+                <li><a id="saudacao" href="indexsocial.html">...</a></li>
                 <li class="hideOnDesktop" onclick=showSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
@@ -78,12 +76,16 @@
             <Br>
             <h3>Titulo:</h3>
             <input class="inputInfo">
-            <h3>Localização:</h3>
-            <input class="inputInfo">
             <h3>CEP:</h3>
-            <input class="inputInfo">
-            <h3>Descrição:</h3>
-            <input class="inputInfo">
+            <input id="cep" class="inputInfo">
+            <h3>Rua:</h3>
+            <input id="rua" class="inputInfo">
+            <h3>Bairro:</h3>
+            <input id="bairro" class="inputInfo">
+            <h3>Cidade:</h3>
+            <input id="cidade" class="inputInfo">
+            <h3>Estado:</h3>
+            <input id="estado" class="inputInfo">
             <button class="btnInfo">Cadastrar</button>
         </div>
     </div>

@@ -1,5 +1,17 @@
-/*---------------------------------- "BANCO DE DADOS" --------------------------------------*/
+/*---------------------------------- "PEGAR NOME DO USUARIO" --------------------------------------*/
 
+document.addEventListener("DOMContentLoaded", () => {
+    const nomeUsuario = localStorage.getItem("usuarioLogado");
+
+    if (nomeUsuario) {
+        const saudacao = document.querySelector("#saudacao");
+        saudacao.textContent = `${nomeUsuario}`;
+        const saudacao2 = document.querySelector("#saudacao2");
+        saudacao2.textContent = `${nomeUsuario}`;
+    } else {
+
+    }
+});
 /*---------------------------------- PÁGINA PRINCIPAL --------------------------------------*/
 let currentIndex = 0;
 let currentText = 0;

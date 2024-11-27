@@ -14,27 +14,27 @@ form.addEventListener("submit", (evt) => {
 
     // valida nome
     if (nome.value.trim() === "") {
-        erros.innerHTML += `<li><a href='javascript:nome.focus()'>Entre com um nome</a></li>`;
+        erros.innerHTML += `<li><i class="bi bi-exclamation-circle"></i><a href='javascript:nome.focus()'> Entre com um nome</a></li>`;
         hasError = true;
     }
 
     //valida email
     if (email.value.trim() === "") {
-        erros.innerHTML += `<li><a href='javascript:email.focus()'>Entre com o email</a></li>`;
+        erros.innerHTML += `<li><i class="bi bi-exclamation-circle"></i><a href='javascript:email.focus()'> Entre com o email</a></li>`;
         hasError = true;
     }
 
     //valida senha
     if (senha.value.trim() === "") {
-        erros.innerHTML += `<li><a href='javascript:senha.focus()'>Entre com a senha</a></li>`;
+        erros.innerHTML += `<li><i class="bi bi-exclamation-circle"></i><a href='javascript:senha.focus()'> Entre com a senha</a></li>`;
         hasError = true;
     } else {
         if (senha.value.length < 8) {
-            erros.innerHTML += `<li><a href='javascript:senha.focus()'>A senha deve conter no mínimo 8 caracteres</a></li>`;
+            erros.innerHTML += `<li><i class="bi bi-exclamation-circle"></i><a href='javascript:senha.focus()'> A senha deve conter no mínimo 8 caracteres</a></li>`;
             hasError = true;
         }
         if (senha.value !== confirma.value) {
-            erros.innerHTML += `<li><a href='javascript:confirma.focus()'>A confirmação e a senha devem ser iguais</a></li>`;
+            erros.innerHTML += `<li><i class="bi bi-exclamation-circle"></i><a href='javascript:confirma.focus()'> A confirmação e a senha devem ser iguais</a></li>`;
             hasError = true;
         }
     }
