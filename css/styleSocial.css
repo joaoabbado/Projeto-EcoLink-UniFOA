@@ -414,10 +414,9 @@ textarea {
 }
 
 
-
 /*---- RESPONSIVIDADE ----*/
 @media (max-width: 768px) {
-    
+
     .logo-header {
         width: 100%;
         height: 100%;
@@ -486,9 +485,6 @@ textarea {
 
 @media (max-width: 1000px){
     
-    .header {
-        
-    }
 
     .mainS {
         max-width: 80%;
