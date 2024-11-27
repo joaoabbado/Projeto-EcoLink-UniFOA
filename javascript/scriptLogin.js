@@ -30,4 +30,3 @@ import { pegarData } from "./scriptBD.js"
         const loginButton = document.querySelector("#loginBotao");
         loginButton.addEventListener("click", entrar);
     });
-

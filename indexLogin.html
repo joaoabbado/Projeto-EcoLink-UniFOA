@@ -3,38 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecolink - Login e Cadastro</title>
-    <link rel="stylesheet" href="/css/styleLogin.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylelogin.css">
 </head>
 <body>
-    <section>
-        <h1>Junte-se a nossa comunidade!</h1>
-        <form id="cadastroForm">
-            <label for="email">Email</label>
-            <div class="input-box">
-                <i class="bi bi-envelope-fill"></i>
-                <input type="email" id="email" name="email" placeholder="Seu email aqui">
-            </div>
-            <label for="senha">Senha</label>
-            <div id="divSenha" class="forca-senha">
-                <i class="bi bi-lock-fill"></i>
-                <input type="password" id="senha" placeholder="Sua senha aqui" name="senha">
-            </div>
-            <div id="error"></div>
-        </form>
-        <div id="botões">
-            <button type="button" id="loginBotao">Entrar</button>
-            <button type="button" id="signinBotao">Cadastrar</button>
+    <div class="container">
+        <div class="form-box">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-box">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="input-box">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div id="error"></div>
+                <div class="forgot-password">
+                    <a href="#" class="forgot-link">Esqueceu a senha?</a>
+                </div>
+                <button type="button" id="loginBotao">Entrar</button>
+                <div class="register-link">
+                    <p>Não tem uma conta? <a href="indexSignin.html">Cadastre-se</a></p>
+                </div>
+            </form>
         </div>
-
-
-    </section>
-    <script>
-        document.getElementById("signinBotao").addEventListener("click", function() {
-          window.location.href = "indexSignin.html";
-        });
-      </script>
+    </div>
     <script type="module" src="/javascript/scriptLogin.js"></script>
 </body>
 </html>
