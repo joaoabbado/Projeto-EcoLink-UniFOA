@@ -18,12 +18,12 @@ a{
 
 /*---- HEADER ----*/
 header{
-    background-color: #11111f;
-    width: 70px;
+    background-color: #a0a0a0;
+    width: 90px;
     height: 100%;
     position: fixed;
     padding: 40px 0 40px 1%;
-    box-shadow: 4px 0 0#47d7ac;
+    box-shadow: 4px 0 0 #47d7ac;
     overflow: hidden;
     transition: 0.7s;
 }
@@ -31,12 +31,15 @@ header{
 
 /*---- NOME E LOGO ----*/
 .name-logo {
+    margin-bottom: 35px;
+    padding: 5px;
+    width: 80px;
+    height: 80px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 60px;
-    margin-bottom: 60px;
+    justify-content: center;
+    overflow: hidden;
+
 }
 
 .logo-header {
@@ -79,6 +82,7 @@ ul{
 }
 
 .item-menu{
+    margin-left: 8%;
     transition: .7s;
 }
 
@@ -128,12 +132,12 @@ ul{
 .mainS {
     width: 100%;
     max-width: 45%;
-    padding: 20px;
+    padding: 0px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 320px;
+    margin-left: 360px;
 }
 
 /*---- AREA DE CRIAÇÃO ----*/
@@ -183,11 +187,12 @@ textarea {
     background: none;
     border: none;
     cursor: pointer;
-    transition: 0.9s;
+    transition: 0.3s;
 }
 
 .btnSubmit:hover{
-    transform: scale(0.95);
+    transform: scale(1.01);
+    background-color: #3bb490;
 }
 
 .btnFileForm{
@@ -195,7 +200,7 @@ textarea {
 }
 
 .btnFileForm:hover{
-    transform: scale(0.95);
+    transform: scale(1.01);
 }
 
 .btnSubmit {
@@ -238,10 +243,8 @@ textarea {
     width: 100%;
 }
 
-.imgPostUsuario {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+.nameAndHour i {
+    font-size: 36px;
     margin-right: 10px;
 }
 
@@ -294,8 +297,8 @@ textarea {
     width: 300px; 
     height: 100vh;
     padding: 20px;
-    background-color: #11111f;
-    box-shadow: 0 0 14px #47d7ac;
+    background-color: #a0a0a0;
+    box-shadow: 0 0 14px #11111f;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -347,16 +350,18 @@ textarea {
 
 .seguir {
     background-color: #47d7ac;
-    color: #11111f;
+    color: #fff;
     border: none;
     padding: 2px 8px;
     border-radius: 4px;
     font-size: 14px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .seguir:hover {
-    background-color: #47d7ac;
+    background-color: #3bb490;
+    transform: scale(1.01);
 }
 
 
@@ -372,9 +377,9 @@ textarea {
 .footer {
     text-align: center;
     font-size: 12px;
-    color: #8e8e8e;
+    color: #fff;
     padding: 20px;
-    background-color: #11111f;
+    background-color: #a0a0a0;
 }
 
 .footer-links ul {
@@ -392,27 +397,26 @@ textarea {
 }
 
 .footer-links ul li a {
-    color: #8e8e8e;
+    color: #fff;
     text-decoration: none;
     font-size: 12px;
 }
 
 .footer-links ul li a:hover {
     text-decoration: underline;
-    color: #ffffff; 
+    color: #fff; 
 }
 
 .footer-copyright {
     margin-top: 15px;
-    color: #8e8e8e;
+    color: #fff;
     font-size: 12px;
 }
 
 
-
 /*---- RESPONSIVIDADE ----*/
 @media (max-width: 768px) {
-    
+
     .logo-header {
         width: 100%;
         height: 100%;
@@ -421,15 +425,11 @@ textarea {
     }
 
     .item-menu{
-        margin-left: 10px;
+        margin-left: 10%;
     }
 
-
-    .mainS {
-        max-width: 80%;
-        flex-direction: column;
-        padding: 10px;
-        margin-left: 80px;
+    .name-logo{
+        margin-left: 0;
     }
 
     .btnSubmit {
@@ -448,6 +448,10 @@ textarea {
 
 @media (max-width: 900px){
 
+    .item-menu{
+        margin-left: 15px;
+    }
+
     .mainS {
         max-width: 80%;
         flex-direction: column;
@@ -464,18 +468,23 @@ textarea {
 
 @media (max-width: 1250px){
 
+    .item-menu{
+        margin-left: 8%;
+    }
+
     .mainS {
         max-width: 60%;
         flex-direction: column;
         padding: 10px;
-        margin-left: 8%;
+        margin-left: 9%;
     }
     
 
 }
 
 
-@media (max-width: 900px){
+@media (max-width: 1000px){
+    
 
     .mainS {
         max-width: 80%;
@@ -488,4 +497,17 @@ textarea {
         display: none;
     }
 
+}
+
+@media (max-width: 768px){
+    .mainS {
+        max-width: 80%;
+        flex-direction: column;
+        padding: 10px;
+        margin-left: 20%;
+    }
+
+    .item-menu{
+        margin-left: 20%;
+    }
 }
