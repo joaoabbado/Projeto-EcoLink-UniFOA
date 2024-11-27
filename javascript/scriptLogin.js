@@ -22,6 +22,8 @@ import { pegarData } from "./scriptBD.js"
             document.querySelector("#error").textContent = "Usuário ou senha incorretos!"
         }else{
                 localStorage.setItem("usuarioLogado", usuario[0].nome);
+                localStorage.setItem("usuarioEmail", usuario[0].email);
+                localStorage.setItem("usuarioSenha", usuario[0].senha);
                 window.location.href = "indexhomelogado.html";
         }
     }

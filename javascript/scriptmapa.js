@@ -73,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
         items[currentIndex].classList.add('active');
     });
 
-    // Initialize the first item as active
     items[currentIndex].classList.add('active');
 });
 
