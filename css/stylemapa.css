@@ -33,8 +33,6 @@ body {
     color: black;
     text-decoration: none;
     transition: all 0.3s;
-    
-
 }
 .locais:hover{
     
@@ -184,7 +182,6 @@ nav li:first-child{
     margin: auto;
     margin-top: 5%;
     margin-bottom: 10%;
-    border: 1px solid #47d7ac;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -222,9 +219,10 @@ nav li:first-child{
 .prev, .next {
     position: absolute;
     top: 50%;
-    height: 50px;
+    height: 100%;
+    width: 30%;
     transform: translateY(-50%);
-    background-color: #fff;
+    background-color: transparent;
     color: #11111f; 
     border: none;
     padding: 5px;
@@ -235,10 +233,12 @@ nav li:first-child{
 }
 
 .prev {
+    color: transparent;
     left: 10px;
 }
 
 .next {
+    color: transparent;
     right: 10px;
 }
 
@@ -278,7 +278,7 @@ nav li:first-child{
 
 .inputInfo:focus {
     outline: none;
-    background-color: white;
+    background-color: #aaaaaa;
 }
 
 .info h3,h2{
@@ -391,8 +391,8 @@ footer {
         padding: 20px;
     }
 
-    .locais{
-         
+    .infoBox p,a{
+        margin-bottom: 15px;
     }
 
     .logo {
