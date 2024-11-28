@@ -8,9 +8,16 @@
 </head>
 <body>
     <div class="profile-container">
+        <div class="profile-header">
+            <h1>Meu Perfil</h1>
+            <p>Atualize suas informações pessoais</p>
+        </div>
         <div class="profile-picture">
-            <input type="file" id="profile-pic-upload" accept="image/*" onchange="previewProfilePic(event)">
             <img src="imagensRSocial/Steve-Jobs.jpg" alt="Foto de Perfil" id="profile-pic">
+        </div>
+        <div class="ficheiro">
+            <label for="profile-pic-upload" class="upload-button">Escolher imagem</label>
+            <input type="file" id="profile-pic-upload" accept="image/*" onchange="previewProfilePic(event)">
         </div>
         <div class="profile-info">
             <label for="name">Nome</label>
@@ -20,7 +27,11 @@
             <input type="email" id="email" placeholder="Digite seu email" readonly>
 
             <label for="password">Senha</label>
-            <input type="text" id="senha" placeholder="Digite sua senha" readonly>
+            <input type="password" id="senha" placeholder="Digite sua senha" readonly>
+        </div>
+        <div class="action-buttons">
+            <button id="edit-button">Editar</button>
+            <button id="save-button">Salvar</button>
         </div>
         <a href="indexsocial.html" class="back-button">Voltar</a>
     </div>
