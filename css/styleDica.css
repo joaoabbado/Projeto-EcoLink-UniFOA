@@ -144,19 +144,19 @@ cursor: pointer;
 }
 
 .main2{
-    position: relative;
-    z-index: 1; 
-    margin: 0;
-    border: 0;
-    padding: 0;
-    padding: 50px;
-    margin-top: 7%;
-    border-radius: 10px;
-    width: 600px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    color: #11111f;
+  position: relative;
+  z-index: 1; 
+  margin: 0;
+  border: 0;
+  padding: 0;
+  padding: 50px;
+  margin-top: 8%;
+  border-radius: 10px;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  color: #11111f;
 }
 
 .main3{
@@ -169,7 +169,7 @@ cursor: pointer;
     margin-top: 8%;
     border-radius: 10px;
     width: 600px;
-    height: 450px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     color: #11111f;
@@ -183,7 +183,8 @@ main {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 30px;
+    padding: 0px 50px 0px 50px;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -210,14 +211,12 @@ h2 {
 .divsContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    max-width: 1200px;
     gap: 25px;
 }
 
 .divsMain {
-    width: 300px;
-    margin-bottom: 8%;
-    margin-right: 90px;
+  margin: 10px;
 }
 
 .divsMain img {
@@ -300,3 +299,4 @@ footer {
 .footer-bottom p{
   margin-top: 1%;
 }
+
