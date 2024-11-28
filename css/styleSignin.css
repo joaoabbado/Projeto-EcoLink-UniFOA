@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(70, 207, 166);
+    background: linear-gradient(to bottom right, #47d7ac, #3ca4c8);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
