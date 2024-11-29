@@ -244,7 +244,7 @@ nav li:first-child{
 
 /*************** Botões Gerais ************/
 .btnInfo {
-    background-color: #47d7ac;
+    background: linear-gradient(to bottom right, #47d7ac, #3ca4c8);
     display: flex;
     padding: .75rem 1.25rem;
     border-radius: 2%;
@@ -258,7 +258,7 @@ nav li:first-child{
 }
 
 .btnInfo:hover {
-    background-color: #3bb490;
+    background: linear-gradient(to top left, #47d7ac, #3ca4c8);
 }
 
 /*************** Formulário ************/

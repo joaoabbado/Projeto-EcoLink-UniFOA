@@ -104,7 +104,7 @@ button{
     display: inline-block;
     width: 30%;
     padding: 10px;
-    background-color: #47d7ac;
+    background: linear-gradient(to bottom right, #47d7ac, #3ca4c8);
     text-decoration: none;
     border-radius: 4px;
     color: #fff;
@@ -115,5 +115,5 @@ button{
     cursor: pointer;
 }
 button:hover {
-    opacity: 0.8;
+    background: linear-gradient(to top left, #47d7ac, #3ca4c8);
 }

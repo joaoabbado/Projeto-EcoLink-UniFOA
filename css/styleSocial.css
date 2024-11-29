@@ -192,7 +192,7 @@ textarea {
 
 .btnSubmit:hover{
     transform: scale(1.01);
-    background-color: #3bb490;
+    background: linear-gradient(to top left, #47d7ac, #3ca4c8);
 }
 
 .btnFileForm{
@@ -204,7 +204,7 @@ textarea {
 }
 
 .btnSubmit {
-    background-color: #47d7ac;
+    background: linear-gradient(to bottom right, #47d7ac, #3ca4c8);
     color: white;
     padding: 7px 15px;
     border-radius: 5px;
@@ -349,7 +349,7 @@ textarea {
 }
 
 .seguir {
-    background-color: #47d7ac;
+    background: linear-gradient(to bottom right, #47d7ac, #3ca4c8);
     color: #fff;
     border: none;
     padding: 2px 8px;
@@ -360,7 +360,7 @@ textarea {
 }
 
 .seguir:hover {
-    background-color: #3bb490;
+    background: linear-gradient(to top left, #47d7ac, #3ca4c8);
     transform: scale(1.01);
 }
 
