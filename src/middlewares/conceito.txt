@@ -1,0 +1,13 @@
+intercepta a rota e faz verificações e validações antes de executar a requisição solicitada.
+
+
+app.use(middleware(req,res,next))
+
+next -> próxima ação
+
+as middlewares são aplicadas em ordem de ações
+
+tipos de middlewares
+1- global
+2- por rotas
+

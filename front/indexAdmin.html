@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuário</title>
+
+  <!-- ✅ VERIFICAÇÃO DE PERMISSÃO DO ADMIN -->
+  <script>
+    const auth = JSON.parse(localStorage.getItem('auth'));
+    if (!auth || auth.user.acesso !== "admin") {
+      alert("Acesso negado. Esta página é exclusiva para administradores.");
+      window.location.href = "indexLogin.html"; // ou outra página pública
+    }
+  </script>
+
+  <link rel="stylesheet" href="/front/css/styleAdmin.css">
+  <link rel="shortcut icon" href="imagensRSocial/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1>Usuários Cadastrados</h1>
+    <div id="cards-container" class="cards-container"></div>
+    <div class="back-container">
+      <a href="javascript:history.back()" class="back-button">Voltar</a>
+    </div>
+  </div>
+
+  <script src="/front/javascript/scriptRoutes.js"></script>
+  <script>
+    window.onload = async function () {
+      try {
+        const response = await fetch('http://localhost:3000/api/usuarios');
+        const data = await response.json();
+
+        if (data.ok) {
+          const usuarios = data.usuarios;
+          const cardsContainer = document.getElementById('cards-container');
+          cardsContainer.innerHTML = '';
+
+          usuarios.forEach((usuario) => {
+            const card = document.createElement('div');
+            card.classList.add('card');
+
+            card.innerHTML = `
+              <h3>${usuario.nome}</h3>
+              <p>Email: ${usuario.email}</p>
+              <p>Acesso: ${usuario.acesso}</p>
+            `;
+
+            cardsContainer.appendChild(card);
+          });
+        } else {
+          console.log('Erro ao carregar usuários');
+        }
+      } catch (error) {
+        console.error('Erro ao fazer a requisição', error);
+      }
+    };
+  </script>
+</body>
+</html>
